@@ -4,7 +4,7 @@ Organização da patota **Meiuka Futebol e Cana**: futebol semanal entre amigos,
 Aqui ficam o código e a infraestrutura do ecossistema digital que apoia a patota no dia a dia.
 
 Site oficial: [meiukafutebol.com.br](https://www.meiukafutebol.com.br/)
-Discussions: [github.com/meiukafutebol/profile/discussions](https://github.com/meiukafutebol/profile/discussions)
+Discussions: [github.com/meiukafutebol/.github/discussions](https://github.com/meiukafutebol/.github/discussions)
 
 ## O que é o projeto
 
@@ -42,4 +42,4 @@ Alguns repositórios são privados.
 
 ## Participe
 
-Use as [Discussions](https://github.com/meiukafutebol/profile/discussions) para ideias, dúvidas e sugestões sobre a plataforma e a patota.
+Use as [Discussions](https://github.com/meiukafutebol/.github/discussions) para ideias, dúvidas e sugestões sobre a plataforma e a patota.
