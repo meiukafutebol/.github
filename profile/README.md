@@ -1,45 +1,33 @@
 # Meiuka Futebol e Cana
 
-Organização da patota **Meiuka Futebol e Cana**: futebol semanal entre amigos, com resenha e confraternizações.
-Aqui ficam o código e a infraestrutura do ecossistema digital que apoia a patota no dia a dia.
+Patota de futebol entre amigos, com muita resenha e confraternização.
+Esta organização reúne o ecossistema digital que facilita a rotina da patota.
 
 Site oficial: [meiukafutebol.com.br](https://www.meiukafutebol.com.br/)
 Discussions: [github.com/meiukafutebol/.github/discussions](https://github.com/meiukafutebol/.github/discussions)
 
-## O que é o projeto
+## O projeto
 
-Plataforma web para organizar a patota: divulgar a história, gerir agenda de jogos e eventos, planos de mensalidade, perfil dos jogadores, confirmação de presença, avaliações pós-jogo, notificações e classificação.
+O Meiuka Futebol e Cana nasceu para manter a patota unida e o jogo organizado. A plataforma digital cuida do que antes ficava espalhado em grupos de mensagem e planilhas: saber quando é o próximo jogo, quem vai, quanto custa e como está a disputa.
 
-- **Site institucional**: história, galeria, jogos, eventos, planos e classificação.
-- **Área logada do jogador**: perfil, confirmação de presença, avaliação dos companheiros e notificações (webapp, Web Push, e-mail e SMS).
-- **Painel administrativo**: cadastro de jogos, eventos, planos, jogadores/papéis e configurações (Board/Admin).
-- **Classificação**: pontos, desempate e variação de posição, calculados a partir da planilha operacional da patota.
+## O que a plataforma oferece
 
-## Repositórios
+- **Quem somos**: a história da patota e a galeria de fotos.
+- **Jogos e eventos**: agenda dos próximos jogos, rachões e confraternizações, com local e horário.
+- **Confirmação de presença**: cada jogador avisa se vai ou não, e todos veem quem confirmou.
+- **Planos e mensalidades**: valores e planos da patota, de forma transparente.
+- **Perfil do jogador**: foto, time do coração e dados de cada integrante.
+- **Classificação**: pontos, aproveitamento e posição de cada jogador ao longo da temporada.
+- **Avaliação pós-jogo**: os jogadores avaliam os companheiros de time.
+- **Avisos**: lembretes e notificações sobre jogos e confirmações.
+- **Convites**: novos jogadores entram na patota por convite.
 
-| Repositório | Descrição |
-|---|---|
-| `frontend` | Site institucional e área logada (Angular SSR) |
-| `lambda` | Funções serverless (APIs e rotinas agendadas), uma por diretório, versionadas e publicadas de forma independente |
-| `infra` | Infraestrutura como código (Terraform) na AWS |
-| `ranking` | Página de classificação (descontinuada, agora parte do site) |
+## Quem usa
 
-Alguns repositórios são privados.
-
-## Arquitetura em resumo
-
-- **Frontend**: Angular com SSR, servido via CloudFront.
-- **Backend**: API Gateway + Lambda (Node.js) + DynamoDB, autenticação com Cognito.
-- **Eventos**: EventBridge e SQS para desacoplar notificações e invalidação de cache.
-- **Infra**: Terraform, CI/CD com GitHub Actions e OIDC (sem chaves estáticas).
-- **Custo**: desenhado para caber quase todo no free tier da AWS.
-
-## Convenções
-
-- Commits seguem [Conventional Commits](https://www.conventionalcommits.org/) com Gitmoji.
-- Versionamento e releases automatizados com semantic-release.
-- Mudanças entram por Pull Request.
+- **Jogadores**: acompanham agenda, confirmam presença e veem a classificação.
+- **Diretoria**: organiza jogos, eventos, planos e a lista de jogadores.
+- **Visitantes**: conhecem a patota e veem a agenda pública.
 
 ## Participe
 
-Use as [Discussions](https://github.com/meiukafutebol/.github/discussions) para ideias, dúvidas e sugestões sobre a plataforma e a patota.
+Use as [Discussions](https://github.com/meiukafutebol/.github/discussions) para ideias, dúvidas e sugestões sobre a patota e a plataforma.
